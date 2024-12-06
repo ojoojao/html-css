@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imgs dinamicas</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <picture>
+        <source media="(max-width: 700px)" srcset="imgs/css-200.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="imgs/css-600.png" type="image/png">
+        <img src="imgs/css.png" alt="img flex">
+    </picture>
+    <h1>Audio</h1>
+    <audio preload="metadata" controls loop>
+        <source src="midia/silent-night.mp3" type="audio/mpeg">
+    </audio>
+    <h1>Video local</h1>
+    <video width="400" poster="imgs/css-200.png" controls>
+        <source src="midia/Video-leve.mp4" type="video/mp4">
+        <source src="midia/Video-leve.webm" type="video/webm">
+    </video>
+    <h1>Video do youtube</h1>
+    <iframe width="400" height="315" src="https://www.youtube.com/embed/SQawZWhnfZQ?si=XtdIO8nioaUMqxT6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
